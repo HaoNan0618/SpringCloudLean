@@ -1,0 +1,24 @@
+＃ ##服务启动端口号
+服务器：
+  港口：8001
+＃ ##服务名称（服务注册到尤里卡名称）  
+春天：
+  百里香叶：
+    模式：LEGACYHTML5
+    cache：false
+    前缀：classpath：/ templates /
+    content-type：text / html
+    编码：UTF-8
+    后缀：.html
+  申请：
+    名称：app-itmayiedu-order
+＃ ##服务注册到尤里卡地址
+假装：
+  hystrix：
+    启用：true
+尤里卡：
+  客户：
+    service-url：
+           defaultZone：http：// localhost：8100 / eureka，http：// localhost：8200 / eureka，http：// localhost：8300 / eureka
+    register-with-eureka：是的
+    fetch-registry：true
